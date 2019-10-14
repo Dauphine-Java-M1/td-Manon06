@@ -48,14 +48,15 @@ Exercice 2
 
 1. https://github.com/Dauphine-Java-M1/td-Manon06
 3. 
-5. Modification 
+5. La modification est enregistrée dans git hub également. 
+tourma180@b048-24:~/javaavance$ git add td00/REPONSES.txt 
+tourma180@b048-24:~/javaavance$ git commit -m 'add of responses.txt'
 
+Exercice 3 JUnit
 
-
-
-
-
-
+1. 
+2. 
+modif depuis javaavance
 
 
 

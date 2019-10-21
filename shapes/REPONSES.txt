@@ -1,0 +1,25 @@
+TD 1 
+
+I) Point
+
+1) Cela fonctionne parce que la classe main se trouve dans la classe point, elle a donc accès aux valeurs x et y.
+
+2) Cela ne marche pas car les champs x et y sont privés donc on ne peut pas les utiliser dans d'autres classes. Pour y remedier, on doit utiliser d'autres variables que x et y. 
+
+3) Il faut que les champs d'une classe soient privés pour pas qu'ils puissent être utilisés dans une autre classe.
+
+4) Un accesseur est une méthode qui permet d'acceder aux variables des objets en lecture. Ici, pour faire lire les valeurs x et y par la classe TestPoint, on peut installer un accesseur dans la classe Point. 
+
+5) J'ai créer un nouveau constructeur qui prend les valeur x et y de la classe. Le constructeur par défaut de java n'est donc plus défini par défaut par le compilateur, le "new point()" ne marche plus (il n'existe plus). Il faut le définir explicitement. Une fois qu'un oncstructeur surchargé est écrit dans la classe, le constructeur par défaut n'est plus reconnu par le compilateur.
+
+6) Je peux remplacer "px" par x et "py" par y sans créer de problèmes d'erreurs. SAns le this, on a un problème car cela devient une affection de la valeur passée en paramètre x dans x et non pas le  x de la classe Point. De même pour la coordonnée x. 
+
+7) Pour connaitre le nombre de points qui ont été créés on ajoute une incrémentation à chaque création d'un point. On appelle la méthode qui incrémente le nombre de points créés. Puis on affiche le nombre de points créés. 
+
+
+
+
+
+
+
+

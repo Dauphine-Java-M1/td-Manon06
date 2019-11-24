@@ -1,0 +1,46 @@
+REPONSES TD1 Encapsulation- SHAPES 
+
+Exercice 1 :
+
+1) Cela fonctionne parce que la classe main se trouve dans la classe point, elle a donc accès aux valeurs x et y.
+
+2) Cela ne marche pas car les champs x et y sont privés donc on ne peut pas les utiliser dans d'autres classes. Pour y remedier, on doit utiliser d'autres variables que x et y. 
+
+3) Il faut que les champs d'une classe soient privés pour pas qu'ils puissent être utilisés dans une autre classe.
+
+4) Un accesseur est une méthode qui permet d'acceder aux variables des objets en lecture. Ici, pour faire lire les valeurs x et y par la classe TestPoint, on peut installer un accesseur dans la classe Point. 
+
+5) J'ai créer un nouveau constructeur qui prend les valeur x et y de la classe. Le constructeur par défaut de java n'est donc plus défini par défaut par le compilateur, le "new point()" ne marche plus (il n'existe plus). Il faut le définir explicitement. Une fois qu'un oncstructeur surchargé est écrit dans la classe, le constructeur par défaut n'est plus reconnu par le compilateur.
+
+6) Je peux remplacer "px" par x et "py" par y sans créer de problèmes d'erreurs. Sans le this, on a un problème car cela devient une affection de la valeur passée en paramètre x dans x et non pas  le  x de la classe Point. De même pour la coordonnée x. 
+
+
+
+
+
+Exercice 4 :
+1) Différentes signatures et possibilités pour cette méthode :
+D'abord, la méthode peut renvoyer un nouveau point qui correspond à la 
+translation du point de départ. Cette méthode peut aussi ne rien renvoyer mais modifier
+le point en changeant ses coordonnées x et y en dx et dy. 
+On fait attention à garder la même signature que le constructeur Circle qui n'est pas sans argument
+
+5) Problème 
+
+6) Le cercle n'a pas été transplanté car on a appelé la méthode transat de point mais pas celle de Circle. 
+Par conséquent, le centre du cercle n'a pas été déplacé.
+
+9) Doit-on faire une méthode statique ? 
+oui car cette méthode ne sera pas appelée avec un objet instancié à partir d'une liste de cercles en
+argument.
+
+
+
+Exercice 5 :
+1) On peut réutiliser les mêmes méthodes avec le cercle. l'héritage est ici intéressant car on s'intéresse
+à un cas particulier de l'objet Cercle qui possède une variable supplémentaire, le rayon interne.
+
+2) avec System.out.println(ring) il ne se passe rien au niveau du code. Pour résoudre ce problème, il
+faut redéfinir la méthode "equals" et la méthode "toString" en fonction de l'héritage.
+il faut également instancier l'objet ring, son point, et les accesseurs sur le rayon interne.
+

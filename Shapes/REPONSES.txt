@@ -4,25 +4,38 @@ EXERCICE 1 :
 1) 
 Classe Graphics: Il s'agit de la classe initiale pour les  contextes graphiques qui 
 permet à une application de dessiner sur plusieurs forment de planches.
-Classe Graphics 2D :
-JFrame : Cette classe gère l'interface, la fenêtre dans laquelle l'utilisateur dessine.
+
+Classe Graphics 2D : Cette classe hérite de la classe graphique et permet de profiter de possibilités 
+géométriques plus poussées, de coordonner les transformations ou autres. 
+Cette classe est indispensable pour obtenir des formes en 2D.
+
+JFrame : Cette classe gère l'interface et la fenêtre dans laquelle l'utilisateur dessine.
+
 Jpanel : Cette classe permet de grouper des composants ensembles.
+
 
 3)
 JFrame frame = new JFrame("Java avancé - Graphic Disay");
- =>> on créé un nouveau cadre qui s'appelle "graphic Display"
+ =>> on rend visible un nouveau cadre qui s'appelle "graphic Display"
 
 frame.setSize(new Dimension (500,500));
-=>> On initialise la taille du cadre qui fait 500 de largeur et 500 en longueur
+=>> On choisi la taille du cadre, ses dimensions, de façon à ce qu'il fasse 500 de largeur et 500 en longueur
 
 frame.setVisible(true);
 =>> On précise que le cadre est visible
 
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-=>> On précise que la fenêtre se ferme par défault.
+=>> On précise que la fenêtre se ferme par défaut.
 
 MyDisplay d = new MyDisplay();
 =>> d est un nouvel espace de dessin
 
 frame.add(d);
 =>> on ajoute cet espace de dessin au cadre.
+
+5) 
+6) Le package java.awt est une boite à outils de widgets d'interface utilisateur, tandis que java.swing
+est une extension de java.awt.
+
+
+

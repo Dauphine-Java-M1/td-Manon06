@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-    // EXERCICE 1 POINTS
+
+//git add Shapes
+//git commit -m "modification"
+//git push origin master
+
+// EXERCICE 1 POINTS
 
 public class Point {
 

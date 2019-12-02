@@ -1,6 +1,10 @@
 
 EXERCICE 1 : 
 
+//git add Shapes
+//git commit -m "modification"
+//git push origin master
+
 1) 
 Classe Graphics: Il s'agit de la classe initiale pour les  contextes graphiques qui 
 permet à une application de dessiner sur plusieurs forment de planches.
@@ -34,8 +38,41 @@ frame.add(d);
 =>> on ajoute cet espace de dessin au cadre.
 
 5) 
+
 6) Le package java.awt est une boite à outils de widgets d'interface utilisateur, tandis que java.swing
 est une extension de java.awt.
+
+
+EXERCICE 2 :
+
+Dans Modèle on a : 
+- Abstract class World 
+- Classe Shape
+- Circle, ligne brisée, Ring 
+
+Dans Vue, on a :
+- My Display
+- Drawable
+- DrawCicle 
+- DrawLine
+- DrawRing
+
+Dans Contrôleur (pour manipuler la souris), on a :
+- MouseController
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,20 @@
-public class Circle {
+import model.Shape;
+import view.DrawCircle;
+import view.Drawable;
+
+import java.awt.*;
+
+public class Circle extends Shape {
 
     private double rayon;
     private Point centre;
+
+
+    public void drawShape(Graphics g) {
+        Drawable dc = new DrawCircle();
+        //dc = new DrawCircle(this);
+        dc.draw(g);
+    }
 
     public Circle(){
         this.centre=new Point(1,1);
@@ -11,25 +24,26 @@ public class Circle {
         this.centre=centre;
         this.rayon=rayon;
     }
+
     public void setCenter(){
         this.centre = centre;
     }
+
     public double getRayon() {
         return rayon;
     }
+
     public void Circle() {
         centre = new Point();
         this.rayon = 3;
     }
 
-    // toString() ==> affichage debug de l'objet
     public String toString() {
         return " le cercle a pour rayon " + rayon;
     }
 
 
     public void translate(int dx, int dy) {
-        //attention: on garde la même signature que le constructeur Circle qui n'est pas sans argument
         this.centre.setX(this.centre.getX() + dx);
         this.centre.setY(this.centre.getY() + dy);
     }

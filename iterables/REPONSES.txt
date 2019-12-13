@@ -1,0 +1,32 @@
+
+EXERCICE 1 : 
+
+//git add Shapes
+//git commit -m "modification"
+//git push origin master
+
+1) 
+Formulation : 
+ public static Iterator<Integer>panel1(final int i,final int j) {
+
+        return new Iterator<Integer>() {
+
+            private int current=i;
+
+            public boolean hasNext() {
+                return current<=j;
+            }
+
+            public Integer next() {
+                return current++;
+            }
+        };
+    }
+
+2) 
+Les classes anonymes :
+Elles permettent de faire un code plus efficace et concis. On déclare et instancie une classe
+en même temps. J'utilise donc les classes anonymes dans le cas où j'ai besoin ponctuellement
+d'une classe locale. 
+
+

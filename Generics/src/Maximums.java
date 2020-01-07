@@ -1,13 +1,14 @@
 public class Maximums {
 
-    public static <T extends Comparable<T>> T myMax(T first, T... objets) {
-        T max = first;
-        for(T i : objets) {
-            if(i.compareTo(max) > 0) { // si une valeur i plus grande que max
-                max = i;
+    public static <T extends Comparable<T>> T myMax(T o, T... objets) {
+        T maximum = o;
+
+        for(T object : objets) {
+            if(maximum.compareTo(object) > 0) {
+                maximum = object;
             }
         }
-        return max;
+        return maximum;
     }
 
     public static void main( String[] args ) {

@@ -33,7 +33,7 @@ argument hors de la liste des arguments l. On définit autre chose à côté.
 EXERCICE 2 : 
 
 1) Pourquoi le code ne compile pas :
-Il y a un héritage entre objet et string, mais le sous tapage classique ne marche pas sur les types paramètres ayant le meme type argument. 
+Il y a un héritage entre objet et string, mais le sous typage classique ne marche pas sur les types paramètres ayant le meme type argument. 
 
 
 

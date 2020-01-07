@@ -6,7 +6,7 @@ public class Exercice3 {
 
     public static List<Integer> listLength(List <? extends CharSequence> list)
     {
-        ArrayList<Integer> length=new ArrayList<Integer>();
+        ArrayList<Integer> length=new ArrayList<Integer>(); // Ajout du type Integer
 
         for(int i=0;i<list.size();i++)
         {

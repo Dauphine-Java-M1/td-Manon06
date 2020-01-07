@@ -29,4 +29,4 @@ Elles permettent de faire un code plus efficace et concis. On déclare et instan
 en même temps. J'utilise donc les classes anonymes dans le cas où j'ai besoin ponctuellement
 d'une classe locale. 
 
-
+3) 

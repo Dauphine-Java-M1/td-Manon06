@@ -1,0 +1,45 @@
+
+EXERCICE 1 : 
+
+//git add Shapes
+//git commit -m "modification"
+//git push origin master
+
+
+1)Signature de la méthode pour l'expression suivante : 
+System.out.println(myMax(42,1664));  //1664 
+System.out.println(myMax(2014,86,13)); //2014
+
+Varargs : liste modifiable permet de spécifier autant de paramètres que je veux
+My max(String...var) : liste de string 
+My max(Int...liste) {... }
+
+2) Un appel à la méthode sans argument ne compile pas si :
+Les varargs peuvent être vide, donc on peut appeler la méthode sans donner d'argument. 
+--> Mymax() est correct, ça compile. (int est bien de 0 à n)
+Pour ne pas compiler, il faut que l'argument soit exclu de varargs. 
+On doit alors implémenter la méthode de cette façon : 
+MyMax(int... liste, int first)
+--> myMax() ne compile pas
+--> myMax(,12) compile. On respecte bien ce qui est demandé, on demande au minimum un
+argument hors de la liste des arguments l. On définit autre chose à côté.
+
+3) MyMax(int... liste, int first)
+
+
+4)Comparable<T> 
+
+
+EXERCICE 2 : 
+
+1) Pourquoi le code ne compile pas :
+Il y a un héritage entre objet et string, mais le sous tapage classique ne marche pas sur les types paramètres ayant le meme type argument. 
+
+
+
+
+
+
+
+
+
